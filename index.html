@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Should I Do Today?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎲 What Should I Do Now?</h1>
+
+    <div class="controls">
+      <label for="category">Choose a category:</label>
+      <select id="category">
+        <option value="all">🌈 All</option>
+        <option value="productive">💼 Productive</option>
+        <option value="fun">🎉 Fun</option>
+        <option value="quick">⏱️ Quick</option>
+      </select>
+      <button onclick="generateIdea()">🎯 Give me an idea!</button>
+    </div>
+
+    <div class="result-card hidden" id="resultCard">
+      <p id="resultText">Your idea will appear here...</p>
+    </div>
+
+    <button class="toggle-dark" onclick="toggleDarkMode()">🌓 </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
